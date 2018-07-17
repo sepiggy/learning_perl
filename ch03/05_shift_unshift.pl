@@ -1,0 +1,10 @@
+@array = qw# dino fred barney #;
+$m = shift(@array);
+$n = shift @array;
+shift @array;
+$o = shift @array;
+unshift @array, 5;
+unshift @array, 4;
+@others = 1..3;
+unshift @array, @others;
+print @array;
